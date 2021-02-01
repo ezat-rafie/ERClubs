@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ERClubs</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <img src="/Clubs_Logo.png" height="100" alt="Clubs Logo" />
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Clubs</a>
+                <a class="navbar-brand" asp-area="" asp-controller="ERCountry" asp-action="Index">Country</a>
+                <a class="navbar-brand" asp-area="" asp-controller="ERInstrument" asp-action="Index">Instrument</a>
+                <a class="navbar-brand" asp-area="" asp-controller="ERStyle" asp-action="Index">Style</a>
+                <a class="navbar-brand" asp-area="" asp-controller="ERArtist" asp-action="Index">Artists</a>
+                <a class="navbar-brand" asp-area="" asp-controller="ERNameAddress" asp-action="Index">Name and Address</a>
+                @if (User.IsInRole("administrator"))
+                {
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropDownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            Security
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropDownMenuButton">
+                            <a class="dropdown-item" href="#">User Maintenance</a>
+                            <a class="dropdown-item" asp-controller="ERRole" asp-action="Index">Role Maintenance</a>
+                        </div>
+                    </div>
+                }
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <strong style="color: red;">@TempData["Temp_Data"]</strong>
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container" id="footerLeft">
+            <a href="mailto:erafie9818@conestogac.on.ca">Ezatullah Rafie</a> - section 3
+            <div id="footerRight">
+                <a asp-controller="Home" asp-action="Index">Home</a> -
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

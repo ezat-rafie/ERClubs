@@ -1,0 +1,9 @@
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\bin\Debug\netcoreapp3.1\ERClassLibrary.deps.json
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\bin\Debug\netcoreapp3.1\ERClassLibrary.dll
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\obj\Debug\netcoreapp3.1\ERClassLibrary.AssemblyInfoInputs.cache
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\obj\Debug\netcoreapp3.1\ERClassLibrary.AssemblyInfo.cs
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\bin\Debug\netcoreapp3.1\ERClassLibrary.pdb
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\obj\Debug\netcoreapp3.1\ERClassLibrary.csproj.CoreCompileInputs.cache
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\obj\Debug\netcoreapp3.1\ERClassLibrary.dll
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\obj\Debug\netcoreapp3.1\ERClassLibrary.pdb
+C:\MY DRIVE\Semester 3\MS Web tech\Assignments\ERClubs\ERClassLibrary\obj\Debug\netcoreapp3.1\ERClassLibrary.csprojAssemblyReference.cache

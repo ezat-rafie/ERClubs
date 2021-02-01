@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ERClubs.Models.Style>
+
+@{
+    ViewData["Title"] = "Styles on File";
+}
+
+<h1>Styles on File</h1>
+
+<p>
+    <a asp-action="Create">Create New Style</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StyleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StyleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StyleName">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StyleName">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StyleName">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
